@@ -1,5 +1,5 @@
 nav.navbar.navbar-default.navbar-fixed-top
-    .container-fluid
+    .container-fluid(ng-controller="navBar")
         .navbar-header
             button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target="#navbar", aria-expanded="false")
                 span.sr-only Toggle navigation
@@ -44,7 +44,15 @@ nav.navbar.navbar-default.navbar-fixed-top
                             a(href="#") Dankeschöne
                         li
                             a(href="#") Gute Besserung
-            form.navbar-form.navbar-right(role='search')
+                li(class=navContact)
+                    a(href='/') Adresse
+                    if navContact == 'active'
+                        span.sr-only (current)
+            form.navbar-form.navbar-right.form-inline(role='search')
                 div.form-group
                     input.form-control(type='text', placeholder='Suche')
-                button.btn.btn-primary.btn-sm(type='submit') Submit
+                    button.btn.btn-primary.btn-sm(type='submit') Submit
+                div.form-group
+                    label &nbsp;&nbsp;
+                    input(type="checkbox", name="slidertoggle", id='slidertoggle', data-size="small",
+                    data-on-color="primary", data-label-text="Slider Fenster", ng-model="slidertoggle", bootstrap-switch, ng-change="change()")
