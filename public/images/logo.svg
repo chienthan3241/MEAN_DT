@@ -27,15 +27,15 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1581"
-     inkscape:window-height="878"
+     inkscape:window-width="1440"
+     inkscape:window-height="856"
      id="namedview54"
      showgrid="false"
      inkscape:zoom="0.33739571"
-     inkscape:cx="462.75023"
-     inkscape:cy="389.75007"
+     inkscape:cx="610.94417"
+     inkscape:cy="152.63976"
      inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-y="23"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg2" />
   <title
@@ -262,18 +262,19 @@
   </g>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:527.08099365px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#6b026b;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     x="633.30719"
-     y="284.39417"
+     style="font-style:normal;font-weight:normal;font-size:628.83428955px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#6b026b;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="568.17383"
+     y="411.26926"
      id="text3392"
      sodipodi:linespacing="125%"
-     transform="scale(0.91268717,1.0956657)"><tspan
+     transform="scale(1.0012661,0.99873547)"><tspan
        sodipodi:role="line"
-       x="633.30719"
-       y="284.39417"
-       id="tspan3394"><tspan
-         x="633.30719"
-         y="284.39417"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:299.70336914px;font-family:'Matura MT Script Capitals';-inkscape-font-specification:'Matura MT Script Capitals'"
+       x="568.17383"
+       y="411.26926"
+       id="tspan3394"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:628.83428955px;font-family:SignPainter;-inkscape-font-specification:SignPainter"><tspan
+         x="568.17383"
+         y="411.26926"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:628.83428955px;font-family:SignPainter;-inkscape-font-specification:SignPainter"
          id="tspan3396">DT</tspan></tspan></text>
 </svg>

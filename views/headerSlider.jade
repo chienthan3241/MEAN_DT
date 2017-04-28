@@ -1,0 +1,57 @@
+.header-box-container
+    .slider-window
+        .slider1
+            #slider1-bg
+            #slider1-bl1
+            #slider1-sd1
+            #slider1-bl2
+            #slider1-sd2
+            #slider1-bl3
+            #slider1-sd3
+            #slider1-bl4
+            #slider1-sd4
+        .slider2
+            #slider2-bg
+            #slider2-bl1
+            #slider2-obj1
+            #slider2-sd1
+            span#slider2-text1 Sweet Valentine
+            #slider2-sd2
+        .slider3
+            #slider3-bg
+            #slider3-ring
+            #slider3-bq1
+            #slider3-bq2
+            #slider3-sd1
+            #slider3-sd12
+            #slider3-sd13
+            #slider3-sd2
+            #slider3-sd22
+            #slider3-sd23
+        .slider4
+            #slider4-bg
+            #slider4-object1
+            #slider4-object2
+            #slider4-object3
+            #slider4-object4
+            #slider4-sd1
+            #slider4-sd2
+            #slider4-sd3
+            #slider4-sd4
+            #slider4-sd5
+            #slider4-sd6
+    .pg-bar#pgBar
+    .bullet-container
+        .bullet-row
+            .ms-bullet#bullet1(onclick="goTo(1)")
+            .ms-bullet#bullet2(onclick="goTo(2)")
+            .ms-bullet#bullet3(onclick="goTo(3)")
+            .ms-bullet#bullet4(onclick="goTo(4)")
+    .next-button(onclick="next(1)")
+    .previous-button(onclick="next(-1)")
+.pg-status
+script(src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TimelineMax.min.js')
+script(src='https://hammerjs.github.io/dist/hammer.js')
+script(src='https://cdn.jsdelivr.net/jquery.hammerjs/2.0.0/jquery.hammer.js')
+script(src='/javascripts/slider.js')
