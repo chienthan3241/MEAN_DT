@@ -512,8 +512,8 @@ body {
   border-bottom-style: solid;
   border-width: 1px;
   h1{
-    font-size: 32px;
-    font-weight: 200;
-    color: #fff;
+    font-size: calc(18px + 1.5vw);
+    font-weight: 400;
+    color: #2c3e50;
   }
 }

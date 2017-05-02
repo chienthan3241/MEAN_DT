@@ -49,10 +49,12 @@ nav.navbar.navbar-default.navbar-fixed-top
                     if navContact == 'active'
                         span.sr-only (current)
             form.navbar-form.navbar-right.form-inline(role='search')
-                div.form-group
+                //div.form-group
                     input.form-control(type='text', placeholder='Suche')
                     button.btn.btn-primary.btn-sm(type='submit') Submit
                 div.form-group
-                    label &nbsp;&nbsp;
-                    input(type="checkbox", name="slidertoggle", id='slidertoggle', data-size="small",
-                    data-on-color="primary", data-label-text="Slider Fenster", ng-model="slidertoggle", bootstrap-switch, ng-change="change()")
+                    //label &nbsp;&nbsp;
+                    input(type="checkbox", name="slidertoggle", id='slidertoggle', data-size="mini",
+                    data-on-color="primary", data-label-text="Slider Fenster",
+                    data-on-text = 'ein', data-off-text = 'aus',
+                    ng-model="slidertoggle", bootstrap-switch, ng-change="change()")

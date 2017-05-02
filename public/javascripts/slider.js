@@ -113,7 +113,7 @@ function goTo(sliderNr){
 }
 //side button click
 function next(direction){
-    if((tl.currentLabel() == '5' && direction == 1) || (tl.currentLabel() == '1' && direction == -1)) {
+    if((tl.currentLabel() == '4' && direction == 1) || (tl.currentLabel() == '1' && direction == -1)) {
         return;
     } else {
         goTo(Number(tl.currentLabel()) + direction);
