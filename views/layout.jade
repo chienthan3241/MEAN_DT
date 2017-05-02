@@ -10,13 +10,14 @@ html(ng-app="app")
     link(rel='stylesheet', href='/stylesheets/style.css')
 
     script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js')
-    script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js')
+    script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js')
+    script(src='vendor/angular-local-storage/dist/angular-local-storage.min.js')
     script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.2/js/bootstrap-switch.min.js')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.13.1/lodash.js')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js')
     script(src='/javascripts/angular.js')
-  body
+  body(ng-controller="main")
     include nav
     block header
     block content

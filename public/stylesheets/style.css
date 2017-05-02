@@ -3,7 +3,6 @@ body {
 
 .header-box-container {
   width: 100vw;
-  height: 30vw;
   position: relative;
   overflow: hidden; }
   .header-box-container .slider-window {

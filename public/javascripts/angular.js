@@ -1,9 +1,21 @@
 (function(angular) {
     'use strict';
-    var app = angular.module('app', []);
+    var app = angular.module('app', ['LocalStorageModule']);
+    app.config(function (localStorageServiceProvider) {
+        localStorageServiceProvider
+            .setPrefix('dt')
+            .setStorageType('localStorage')
+            .setNotify(true, true)
+    });
 
-    app.controller('navBar', ['$scope', function ($scope) {
-        $scope.slidertoggle = true;
+    //slider show/hide will be persistent in localstorage
+    app.controller('main', function($scope, localStorageService) {
+        $scope.slHeight = (localStorageService.get('sliderState') == true) ? '30' : '0';
+        $scope.slBar = (localStorageService.get('sliderState') == true) ? '15' : '0';
+    });
+
+    app.controller('navBar', function ($scope, localStorageService) {
+        $scope.slidertoggle =  localStorageService.get('sliderState');
         $scope.change = function() {
             let sliderToggleTimeline = anime.timeline({
                 autoplay: false
@@ -25,6 +37,7 @@
                     offset: 0
                 });
                 sliderToggleTimeline.play();
+                localStorageService.set('sliderState', false);
             } else {
                 sliderToggleTimeline
                     .add({
@@ -42,9 +55,10 @@
                         offset: 0
                     });
                 sliderToggleTimeline.play();
+                localStorageService.set('sliderState', true);
             }
         }
-    }]);
+    });
 
     app.directive('bootstrapSwitch', [
         function() {
@@ -73,4 +87,5 @@
             };
         }
     ]);
+
 })(window.angular);
