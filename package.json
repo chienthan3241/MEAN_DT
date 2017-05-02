@@ -6,8 +6,8 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "angular-local-storage": "^0.5.2",
     "body-parser": "~1.17.1",
-    "bower": "1.7.9",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.3",
     "express": "~4.15.2",
@@ -21,8 +21,5 @@
     "gulp": "^3.9.1",
     "gulp-open": "^2.0.0",
     "gulp-sass": "^3.1.0"
-  },
-  "scripts": {
-    "postinstall": "bower install"
   }
 }
