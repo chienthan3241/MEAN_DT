@@ -32,10 +32,10 @@
      id="namedview54"
      showgrid="false"
      inkscape:zoom="0.33739571"
-     inkscape:cx="764.00633"
+     inkscape:cx="446.8713"
      inkscape:cy="508.30522"
-     inkscape:window-x="17"
-     inkscape:window-y="22"
+     inkscape:window-x="119"
+     inkscape:window-y="95"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg2" />
   <title
@@ -260,17 +260,17 @@
          style="fill:#6b026b;fill-rule:nonzero;stroke-width:1px" />
     </g>
   </g>
-  <text
-     xml:space="preserve"
+  <g
+     transform="scale(1.1139789,0.89768307)"
      style="font-style:normal;font-weight:normal;font-size:686.30096436px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#6b026b;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     x="535.94885"
-     y="408.22943"
-     id="text3667"
-     sodipodi:linespacing="125%"
-     transform="scale(1.1139789,0.89768307)"><tspan
-       sodipodi:role="line"
-       id="tspan3669"
-       x="535.94885"
-       y="408.22943"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:522.3427124px;font-family:SignPainter;-inkscape-font-specification:SignPainter">DT</tspan></text>
+     id="text3667">
+    <path
+       d="m 645.64082,146.53573 c -36.04165,53.8013 -79.39609,135.28676 -95.58871,184.38698 -10.9692,33.95228 -8.35749,41.78742 1.56702,55.36833 7.3128,10.44685 15.67029,17.23731 21.9384,22.46073 8.87982,7.3128 18.28199,8.87983 33.42993,3.6564 C 746.97531,365.91967 839.95231,213.3956 791.89678,129.82077 772.5701,95.868489 746.45297,78.63118 713.02303,83.854607 c -33.95227,5.223427 -60.06941,26.117133 -96.11106,30.818223 -6.79045,1.04468 -7.3128,4.17874 -5.22342,9.92451 3.13405,7.83514 13.58091,20.89371 33.95227,21.93839 z m 27.68417,-5.22342 c 36.56399,-12.01389 74.695,-39.69805 92.977,-10.44686 30.81822,49.10022 -34.99696,198.49023 -177.59652,252.81387 -15.67028,5.74577 -19.32668,-1.56702 -12.53623,-23.50542 15.14794,-48.05553 57.4577,-117.52711 83.57484,-164.01561 13.05856,-22.98308 16.19262,-41.78742 13.58091,-54.84598 z"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:522.3427124px;font-family:SignPainter;-inkscape-font-specification:SignPainter"
+       id="path3582" />
+    <path
+       d="M 900.47877,133.99951 C 851.9009,207.64983 795.48788,320.9982 783.474,363.8303 c -6.79045,25.07245 -0.52234,40.74273 6.79046,47.53319 3.65639,3.6564 6.26811,3.6564 8.35748,-1.56703 40.74273,-95.58872 85.14186,-168.7167 116.48242,-225.65205 14.10326,-25.5948 17.75966,-42.8321 17.23731,-55.36833 30.29588,-5.22343 63.20347,-10.44685 88.79823,-7.83514 6.7905,0.52234 7.8352,-3.6564 6.2681,-7.83514 -7.8351,-20.371367 -27.68412,-26.117137 -49.62251,-26.63948 -29.77353,-1.044685 -116.48243,18.282 -162.97093,14.6256 -5.22342,-0.52235 -7.31279,2.08937 -5.74577,6.79045 5.74577,19.32668 28.20651,30.81822 59.54707,29.77354 9.40217,-0.52235 19.84903,-1.56703 31.86291,-3.6564 z"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:522.3427124px;font-family:SignPainter;-inkscape-font-specification:SignPainter"
+       id="path3584" />
+  </g>
 </svg>
