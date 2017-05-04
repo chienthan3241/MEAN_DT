@@ -1,12 +1,20 @@
 extends layout
 
 block header
-  include headerSlider
+    include headerSlider
 
 block content
-    //.container-fluid.page_title2
-        .container
-            .col-md-12
-                h1 Über uns
+    - var bodyHeaderText = 'Home'
+    include contentHeader
+
     .clearfix
-    //.container
+    .container
+        h2 sdok
+        h2 sdok
+        h2 sdok
+        h2 sdok
+        h2 sdok
+        h2 sdok
+
+block footer
+    include footer

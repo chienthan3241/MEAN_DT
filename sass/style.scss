@@ -1,5 +1,6 @@
 body {
   padding-top: 66px;
+  //background: #32a5cf;
 }
 
 //=================Slider css===========
@@ -503,17 +504,121 @@ body {
 }
 
 //################End Slider css########
-.page_title2{
-  background: #eaf1f1 url("/images/banner2.png") no-repeat center center;
-  float: left;
-  padding: 40px 0;
-  width: 100%;
-  margin-bottom: 40px;
-  border-bottom-style: solid;
-  border-width: 1px;
-  h1{
-    font-size: calc(18px + 1.5vw);
-    font-weight: 400;
-    color: #2c3e50;
+.page_title{
+  padding: 0;
+  border-top-style: solid;
+  border-top-width: 1px;
+  .top_page_title{
+    background: #fff url("/images/footer_bg_body.png") repeat center bottom;
+    background-size: cover;
+    padding-top: 20px;
+    height: 0;
+    overflow: visible;
+    width: 100%;
+    position: relative;
+    span{
+      margin-top: 5px;
+      position: absolute;
+      font-size: calc(10px + 1vw);
+      font-weight: 400;
+      color: #2c3e50;
+    }
   }
+  .top_page_title_bottom{
+    padding: 110px 0 0 0;
+    height: 100%;
+    background: url("/images/header_bg_top.png") no-repeat center top;
+    background-size: cover;
+  }
+}
+
+.footer{
+  width: 100%;
+  position: relative;
+  padding: 0;
+  float: left;
+  .top_footer{
+    padding: 132px 0 0 0;
+    width: 100%;
+    background: url("/images/footer_bg_top.png") no-repeat center top;
+    background-size: cover;
+  }
+  .footer_body{
+    background: #fff url("/images/footer_bg_body.png") repeat center bottom;
+    background-size: cover;
+    img {
+      width: calc(12px + 1vw);
+    }
+    .footer-column-top {
+      font-size: large;
+      color: #1A5276;
+      img {
+        padding-bottom: 2px;
+        width: calc(50px + 3vw);
+      }
+    }
+    .social{
+      b {
+        color: #1B3568;
+      }
+    }
+    blockquote{
+      border-left: 10px solid #34495e;
+      padding-top: 0;
+      a{
+        font-size: small;
+        color: #1A5276;
+      }
+    }
+    ul{
+      float: left;
+      width: 100%;
+      padding-left: 0px;
+      li{
+        list-style: none;
+        color: #1A5276;
+      }
+      li.location::before{
+        content: "";
+        background-image: url("/images/location.svg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        padding-right: 20px;
+      }
+      li.telephoneNumber::before{
+        content: "";
+        background: url("/images/phone.svg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        padding-right: 20px;
+      }
+      li.emailContact::before{
+        content: "";
+        background-image: url("/images/email.svg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        padding-right: 20px;
+      }
+    }
+    iframe.addressMap{
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.top_footer{
+  padding: 9vw 0 0 0;
+}
+
+img#footerlogo, img#footer_facebook_logo, img#footer_twitter_logo{
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  :hover{
+
+  }
+}
+img#footerlogo:hover, img#footer_facebook_logo:hover, img#footer_twitter_logo:hover{
+  filter: none;
+  -webkit-filter: none;
+  transition: all 0.5s;
 }

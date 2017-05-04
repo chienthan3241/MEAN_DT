@@ -8,6 +8,7 @@
   "dependencies": {
     "angular-local-storage": "^0.5.2",
     "body-parser": "~1.17.1",
+    "bootswatch": "^3.3.7",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.3",
     "express": "~4.15.2",

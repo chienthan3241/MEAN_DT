@@ -60,6 +60,15 @@
         }
     });
 
+    //footer adresse
+    app.controller('footerController', function ($scope) {
+        $scope.liAdressElements = [
+            {class: 'location', txt: 'Regensburger Str. 175A 90478 Nürnberg'},
+            {class: 'telephoneNumber', txt: '+49 176 88 1111 66'},
+            {class: 'emailContact', txt: 'tmchut@yahoo.com'}
+        ];
+    });
+
     app.directive('bootstrapSwitch', [
         function() {
             return {

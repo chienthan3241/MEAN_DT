@@ -1,0 +1,53 @@
+//
+   Created by manh-cuong on 02.05.17.
+.container-fluid.footer(ng-controller="footerController")
+    .top_footer
+    .container-fluid.footer_body
+        .container
+            .col-md-2
+                a(href='/', class="footer-column-top")
+                    img#footerlogo(src='/images/logo.svg')
+                br
+                br
+                blockquote
+                    a(href='/') Blumen im Bund
+                    br
+                    a(href='/') Bunte Sträuße
+            .col-md-3
+                br
+                blockquote
+                    a(href='/') Mutter Tag
+                    br
+                    a(href='/') Hochzeit
+                    br
+                    a(href='/') Geburt
+                    br
+                    a(href='/') Trauer
+                    br
+                    a(href='/') Liebe & Romantik
+                    br
+                    a(href='/') Glückwunsch
+                    br
+                    a(href='/') Dankeschöne
+                    br
+                    a(href='/') Gute Besserung
+            .col-md-3
+                .footer-column-top
+                    b Social Media
+                br
+                a(target="_blank" href='https://www.facebook.com/Hami-Halinh-1487667571285199/')
+                    img#footer_facebook_logo(src='/images/facebook.svg')
+                span.social
+                    b &nbsp;&nbsp;&nbsp;facebook
+                br
+                br
+                a(target="_blank" href='https://twitter.com/tmchutdev')
+                    img#footer_twitter_logo(src='/images/twitter.svg')
+                span.social
+                    b &nbsp;&nbsp;&nbsp;twitter
+            .col-md-4
+                .footer-column-top
+                    b Adresse Info
+                iframe.addressMap(width="100%", height="200", frameborder="0", style="border:0", src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDlb4uWwS7Y2BqIb0dPkZGgZSW0szBeKwU&q=Regensburger+Str.+175A,+90478+Nürnberg,+Deutschland", allowfullscreen)
+                ul(ng-repeat="liAdressElement in liAdressElements")
+                    li(class="{{liAdressElement.class}}") &nbsp;{{liAdressElement.txt}}
