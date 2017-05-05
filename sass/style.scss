@@ -3,14 +3,14 @@ body {
   //background: #32a5cf;
 }
 
-//=================Slider css===========
+//=================Slider css=================
 .header-box-container {
   width: 100vw;
   //height: 30vw;
   position: relative;
   overflow: hidden;
   .slider-window {
-    cursor: url("/images/hsrp2uscre.ico"), auto;
+    cursor: url("/images/hand_open.ico"), auto;
     .slider1 {
       position: absolute;
       width: 100vw;
@@ -433,7 +433,7 @@ body {
     }
   }
   .slider-window:active {
-    cursor: url("/images/d9fcptkirh.ico"), auto;
+    cursor: url("/images/hand_close.ico"), auto;
   }
   .pg-bar {
     position: absolute;
@@ -503,7 +503,8 @@ body {
   background-size: 15px 15px;
 }
 
-//################End Slider css########
+//################End Slider css################
+//=================header footer=================
 .page_title{
   padding: 0;
   border-top-style: solid;
@@ -530,6 +531,7 @@ body {
     background: url("/images/header_bg_top.png") no-repeat center top;
     background-size: cover;
   }
+  margin-bottom: 20px;
 }
 
 .footer{
@@ -565,6 +567,7 @@ body {
     blockquote{
       border-left: 10px solid #34495e;
       padding-top: 0;
+      padding-right: 0;
       a{
         font-size: small;
         color: #1A5276;
@@ -621,4 +624,35 @@ img#footerlogo:hover, img#footer_facebook_logo:hover, img#footer_twitter_logo:ho
   filter: none;
   -webkit-filter: none;
   transition: all 0.5s;
+}
+
+//=================content=================
+.item_box{
+  display: block;
+  height: 500px;
+  padding-bottom: 30px;
+  .main_cover{
+    margin-bottom: 40px;
+    img{
+      width: 20vw;
+      height: auto;
+      -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+      box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    }
+  }
+  .underline_item{
+    border-bottom: 3px solid;
+    border-bottom-color: #0b76cc;
+    margin-bottom: 10px;
+  }
+  .price_box{
+    font-size: x-large;
+    color: #2c3e50;
+    position: absolute;
+    text-align: right;
+    bottom: 0;
+    right: 30px;
+  }
+
 }

@@ -1,0 +1,29 @@
+extends layout
+
+block header
+    include headerSlider
+
+block content
+    - var catalog = "ctg2"
+    include contentHeader
+
+    .clearfix
+    .container
+        .col-md-4(ng-repeat="data in dataObjects | filter:filterByTags('ctg2')")
+            .col-md-11.item_box
+                .main_cover
+                    a(href= "/blumenstraeusse/{{data.id}}")
+                        img(src="/images/data/{{data.id}}_x1.jpg")
+                .clearfix
+                .underline_item
+                a(href="/blumenstraeusse/{{data.id}}")
+                    h6
+                        b {{data.name}}
+                .clearfix
+                span {{data.describe_compact}}
+                .clearfix
+                .price_box
+                    b {{data.price.euro}}.
+                        sup {{data.price.cent}}*
+block footer
+    include footer

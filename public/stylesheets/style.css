@@ -6,7 +6,7 @@ body {
   position: relative;
   overflow: hidden; }
   .header-box-container .slider-window {
-    cursor: url("/images/hsrp2uscre.ico"), auto; }
+    cursor: url("/images/hand_open.ico"), auto; }
     .header-box-container .slider-window .slider1 {
       position: absolute;
       width: 100vw;
@@ -402,7 +402,7 @@ body {
         z-index: 9;
         opacity: 1; }
   .header-box-container .slider-window:active {
-    cursor: url("/images/d9fcptkirh.ico"), auto; }
+    cursor: url("/images/hand_close.ico"), auto; }
   .header-box-container .pg-bar {
     position: absolute;
     bottom: 0px;
@@ -464,7 +464,8 @@ body {
 .page_title {
   padding: 0;
   border-top-style: solid;
-  border-top-width: 1px; }
+  border-top-width: 1px;
+  margin-bottom: 20px; }
   .page_title .top_page_title {
     background: #fff url("/images/footer_bg_body.png") repeat center bottom;
     background-size: cover;
@@ -510,7 +511,8 @@ body {
       color: #1B3568; }
     .footer .footer_body blockquote {
       border-left: 10px solid #34495e;
-      padding-top: 0; }
+      padding-top: 0;
+      padding-right: 0; }
       .footer .footer_body blockquote a {
         font-size: small;
         color: #1A5276; }
@@ -553,3 +555,27 @@ img#footerlogo:hover, img#footer_facebook_logo:hover, img#footer_twitter_logo:ho
   filter: none;
   -webkit-filter: none;
   transition: all 0.5s; }
+
+.item_box {
+  display: block;
+  height: 500px;
+  padding-bottom: 30px; }
+  .item_box .main_cover {
+    margin-bottom: 40px; }
+    .item_box .main_cover img {
+      width: 20vw;
+      height: auto;
+      -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75); }
+  .item_box .underline_item {
+    border-bottom: 3px solid;
+    border-bottom-color: #0b76cc;
+    margin-bottom: 10px; }
+  .item_box .price_box {
+    font-size: x-large;
+    color: #2c3e50;
+    position: absolute;
+    text-align: right;
+    bottom: 0;
+    right: 30px; }

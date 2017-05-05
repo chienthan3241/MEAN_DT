@@ -2,5 +2,9 @@
     .top_page_title
         .container
             .col-md-12
-                span= bodyHeaderText
+                - if (typeof(catalog) !== 'undefined')
+                    span= bodyHeaderText + " ({{countByTags('" + catalog + "')}})"
+                - else
+                    span= bodyHeaderText
+
     .top_page_title_bottom
