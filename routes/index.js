@@ -14,4 +14,8 @@ router.get('/blumenstraeusse/:id', function(req, res, next) {
   res.render('index', { title: 'Duc&Trang Blumen', bodyHeaderText: 'Blumensträuße' });
 });
 
+router.get('/blumenimbund', function(req, res, next) {
+  res.render('blumenimbund', { title: 'Duc&Trang Blumen', bodyHeaderText: 'Blumen im Bund', nav1: 'active' });
+});
+
 module.exports = router;

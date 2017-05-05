@@ -7,13 +7,65 @@ block content
     include contentHeader
 
     .clearfix
-    .container
-        h2 sdok
-        h2 sdok
-        h2 sdok
-        h2 sdok
-        h2 sdok
-        h2 sdok
+    .container.bestseller
+        ul.nav.nav-tabs
+            li.active
+                a(href="#") Unsere Bestseller
+            li
+                a &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            li
+                a &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            li
+                a &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            li
+                a &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        .clearfix
+        br
+        .container-fluid.bestseller_box
+            .col-md-2.bestseller_item(ng-repeat="data in dataObjects | filter:filterByTags('bs')")
+                .col-md-12.bestseller_item_detail
+                    .main_cover
+                        a(href= "/blumenstraeusse/{{data.id}}")
+                            img(src="/images/data/{{data.id}}_x1.jpg")
+                    .clearfix
+                    .underline_item
+                    a(href="/blumenstraeusse/{{data.id}}")
+                        h6
+                            b {{data.name}}
+                    .clearfix
+                    span {{data.describe_compact}}
+                    .clearfix
+                    .price_box
+                        b {{data.price.euro}}.
+                            sup {{data.price.cent}}*
+
+        .clearfix
+        br
+
+        ul.nav.nav-tabs
+            li.active
+                a(href="#") Ob Dankeschön, Liebesgruß oder kleine Aufmerksamkeit – Blumensträuße für jeden Anlass
+            li
+                a &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            li
+                a &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            li
+                a &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            li
+                a &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        .clearfix
+        br
+
+        p= "Egal, zu welchem Anlass Sie einen Blumenstrauß verschenken wollen, bei uns werden Sie garantiert fündig."
+            | "Ob es nun ein blumiger Gruß zum Geburtstag sein soll, ein Liebesgeschenk zum Valentinstag, eine aufrichtige Entschuldigung"
+            | oder ein blumiger Gruß für Geschäftspartner – im Sortiment von uns finden Sie für jeden Anlass die passenden Blumen.
+            | Natürlich bedarf es aber keines besonderen Anlasses um einen Blumenstrauß zu verschenken,
+            | Sie können auch einfach nur so Blumen online bestellen, weil Blumen jede Wohnung einfach schöner aussehen lassen.
+            | Die stilvolle und bunte Farbenpracht sowie die 7-Tage-Frische-Garantie der Blumen versichert Ihnen und den von Ihnen beschenkten Menschen eine Freude,
+            | die von Dauer ist. Einen besonderen Touch oder eine ganz persönliche Note verleihen Sie Ihrem blumigen Geschenk,
+            | wenn Sie den Blumenstrauß mit einer Glückwunschkarte versehen, oder die Blumen mit einer köstlichen Flasche Piccolo
+            | oder einem Schokoladeherzen kombinieren. Unsere Blumen bietet Ihnen hierzu verschiedene Möglichkeiten,
+            | die einen Blick in das große Blumensortiment auf jeden Fall Wert sind.
 
 block footer
     include footer

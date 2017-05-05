@@ -20,7 +20,7 @@
                 euro: 20,
                 cent: 99
             },
-            tags: "ctg1;ctg2;ctg7",
+            tags: "bs;ctg2;ctg7",
             status: {
                 sales: false,
                 sale_price: ""
@@ -36,7 +36,7 @@
                 euro: 19,
                 cent: 99
             },
-            tags: "ctg1;ctg2",
+            tags: "bs;ctg1;ctg2",
             status: {
                 sales: false,
                 sale_price: ""
@@ -52,7 +52,23 @@
                 euro: 25,
                 cent: 99
             },
-            tags: "ctg1;ctg2",
+            tags: "ctg1",
+            status: {
+                sales: false,
+                sale_price: ""
+            }
+        },
+        {
+            id: "12902",
+            name: "Blumenstrauß Colorato",
+            describe_compact: "Ein Strauß der zum Feiern einlädt!",
+            describe_detail: "Ein wunderschönes Farbenspiel aus Lilien und Germini in verschiedenen Orangetönen, gelben Sprayrosen, Lisianthus und Santini in kräftigem Pink sowie leuchtend blauer Statize lässt diesen Strauß strahlen. Dekorativ ausschweifendes Beargras, Alchemilla und frisches Grün runden das Arrangement ab.",
+            content: "5 gelbe Sprayrosen, 4 orangefarbene Germini, 3 orangefarbene Lilien (mehrblütig), 3 rosafarbene Lisianthus (mehrblütig), 3 lilafarbene Santini, 3 blaue Statize - arrangiert mit Alchemilla, Beargras, Aralie und frischem Grün (Durchmesser ca. 40cm)",
+            price: {
+                euro: 45,
+                cent: 99
+            },
+            tags: "bs;ctg1;ctg2",
             status: {
                 sales: false,
                 sale_price: ""
