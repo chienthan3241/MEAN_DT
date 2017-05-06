@@ -658,6 +658,13 @@ img#footerlogo:hover, img#footer_facebook_logo:hover, img#footer_twitter_logo:ho
 }
 
 .bestseller{
+  .section_caption{
+    border-bottom: 1px solid #f44336;
+    p{
+      font-size: large;
+      color: #2196f3;
+    }
+  }
   .bestseller_box{
     padding: 0;
     .bestseller_item{

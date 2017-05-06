@@ -20,7 +20,7 @@
                 euro: 20,
                 cent: 99
             },
-            tags: "bs;ctg2;ctg7",
+            tags: "bs;ctg2;ctg3;ctg4;ctg5;ctg7;ctg9",
             status: {
                 sales: false,
                 sale_price: ""
@@ -36,7 +36,7 @@
                 euro: 19,
                 cent: 99
             },
-            tags: "bs;ctg1;ctg2",
+            tags: "bs;ctg1;ctg2;ctg3;ctg5;ctg7;ctg8;ctg10",
             status: {
                 sales: false,
                 sale_price: ""
@@ -52,7 +52,7 @@
                 euro: 25,
                 cent: 99
             },
-            tags: "ctg1",
+            tags: "ctg1;ctg3;ctg4;ctg7;ctg8",
             status: {
                 sales: false,
                 sale_price: ""
@@ -68,7 +68,55 @@
                 euro: 45,
                 cent: 99
             },
-            tags: "bs;ctg1;ctg2",
+            tags: "bs;ctg1;ctg2;ctg3;ctg5;ctg7;ctg10",
+            status: {
+                sales: false,
+                sale_price: ""
+            }
+        },
+        {
+            id: "17923",
+            name: "Blumenstrauß Wunderbare Mama!",
+            describe_compact: "Wunderbare Mama!Eine liebliche Kreation aus Rosen,...",
+            describe_detail: "Eine liebliche Kreation aus Rosen, Germini, Spraynelken und grünen Nelken in einem wunderbar eleganten Altrosa, kombiniert mit kräftigem Pink und frischem Grün lässt die Augen Ihrer Mama garantiert strahlen. Eine dekorative Sisal-Schleife ist liebevoll in den Strauß gebunden.",
+            content: "2 rosafarbene Rosen, 3 pinkfarbene Germini, 2 rosafarbene Spraynelken, 2 grüne Nelken, 1 rosa Sisal-Bündel - arrangiert mit Alchemilla und frischem Grün (Durchmesser ca. 26cm)",
+            price: {
+                euro: 30,
+                cent: 99
+            },
+            tags: "bs;ctg1;ctg2;ctg3;ctg8;ctg9;ctg10",
+            status: {
+                sales: false,
+                sale_price: ""
+            }
+        },
+        {
+            id: "17067",
+            name: "Blumenstrauß Für meinen Star",
+            describe_compact: "Für Ihren Star! Eine wunderschöne Aufmerksamkeit,...",
+            describe_detail: "Eine wunderschöne Aufmerksamkeit, ob zum Valentinstag oder einfach nur so. Ihr Star hat einen Blumengruß verdient. Die ursprünglich aus Peru stammende Alstromerie, auch Inkalie genannt, ist eine wahre Schönheit. 12 Alstromerien (Länge 60cm) ergeben ein wahres Blütenmeer in zarten Tönen von Rosa, Gelb und Weiß.",
+            content: "12 rosé-gelbe Alstromieren (ca. 60 cm)",
+            price: {
+                euro: 18,
+                cent: 99
+            },
+            tags: "bs;ctg1;ctg2;ctg8;ctg10",
+            status: {
+                sales: false,
+                sale_price: ""
+            }
+        },
+        {
+            id: "14018",
+            name: "Blumenstrauß Modena",
+            describe_compact: "Ein eleganter Strauß für die besonderen Momente!",
+            describe_detail: "Diese elegante Kreation aus Rosen, Germini, Lilien, Santini und Lisianthus in zarten Weißtönen begeistert mit ihrer natürlich schönen Ausstrahlung. Bupleurum, Aralie und frisches Grün unterstreichen die natürliche Anmutung.",
+            content: "3 weiße Rosen, 2 weiße Lilien, 2 weiß-grüne Santini, 2 weiße Germini, 1 weißer Lisianthus - arrangiert mit Bupleurum, Aralie, Beargras und frischem Grün (Durchmesser ca. 32cm)",
+            price: {
+                euro: 25,
+                cent: 99
+            },
+            tags: "bs;ctg1;ctg2;ctg4;ctg6",
             status: {
                 sales: false,
                 sale_price: ""

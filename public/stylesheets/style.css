@@ -580,6 +580,12 @@ img#footerlogo:hover, img#footer_facebook_logo:hover, img#footer_twitter_logo:ho
     bottom: 30px;
     right: 30px; }
 
+.bestseller .section_caption {
+  border-bottom: 1px solid #f44336; }
+  .bestseller .section_caption p {
+    font-size: large;
+    color: #2196f3; }
+
 .bestseller .bestseller_box {
   padding: 0; }
   .bestseller .bestseller_box .bestseller_item {

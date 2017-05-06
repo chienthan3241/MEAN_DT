@@ -18,4 +18,16 @@ router.get('/blumenimbund', function(req, res, next) {
   res.render('blumenimbund', { title: 'Duc&Trang Blumen', bodyHeaderText: 'Blumen im Bund', nav1: 'active' });
 });
 
+router.get('/muttertag', function(req, res, next) {
+  res.render('muttertag', { title: 'Duc&Trang Blumen', bodyHeaderText: 'Mutter Tag', navDrop: 'active' });
+});
+
+router.get('/hochzeit', function(req, res, next) {
+  res.render('hochzeit', { title: 'Duc&Trang Blumen', bodyHeaderText: 'Hochzeit', navDrop: 'active' });
+});
+
+router.get('/geburt', function(req, res, next) {
+  res.render('geburt', { title: 'Duc&Trang Blumen', bodyHeaderText: 'Geburt', navDrop: 'active' });
+});
+
 module.exports = router;

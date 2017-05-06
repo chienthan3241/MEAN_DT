@@ -1,0 +1,14 @@
+extends layout
+
+block header
+    include headerSlider
+
+block content
+    - var catalog = "ctg4"
+    - var currentRouter = "hochzeit"
+    include contentHeader
+
+    .clearfix
+    include contentDetail
+block footer
+    include footer

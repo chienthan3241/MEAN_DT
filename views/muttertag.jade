@@ -1,0 +1,14 @@
+extends layout
+
+block header
+    include headerSlider
+
+block content
+    - var catalog = "ctg3"
+    - var currentRouter = "muttertag"
+    include contentHeader
+
+    .clearfix
+    include contentDetail
+block footer
+    include footer
