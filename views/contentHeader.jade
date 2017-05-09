@@ -3,7 +3,13 @@
         .container
             .col-md-12
                 - if (typeof(catalog) !== 'undefined')
-                    span= bodyHeaderText + " ({{countByTags('" + catalog + "')}})"
+                    - if (typeof(parentNav) === 'undefined')
+                        span= bodyHeaderText + " ({{countByTags('" + catalog + "')}})"
+                    - else
+                        ul.breadcrumb
+                            li.level1
+                                a(href='/' + parentNav)= bodyHeaderText + " ({{countByTags('" + catalog + "')}})"
+                            li.level2= "{{getProduct('" + id + "').name}}"
                 - else
                     span= bodyHeaderText
 

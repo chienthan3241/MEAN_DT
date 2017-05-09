@@ -1,6 +1,15 @@
 extends layout
 
 block content
-  h1= message
-  h2= error.status
-  pre #{error.stack}
+  -var bodyHeaderText = "Seite nicht gefunden"
+  include contentHeader
+
+  .container
+    .jumbotron
+      h1= error.status
+      p= "Seite nicht gefunden!!!"
+      p
+        a(href='/').btn.btn-warning zurück zum Start Seite
+
+block footer
+  include footer

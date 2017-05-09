@@ -45,7 +45,7 @@
         {
             id: "19372",
             name: "Rosenbouquet gelb-orange",
-            describe_compact: "Ein Arm voll leuchtend gelb-orangefarbener Rosen direkt vom Anbauer zu Ihnen nach Hause - so frisch wie selbstgepflückt.",
+            describe_compact: "Ein Arm voll leuchtend gelb-orangefarbener Rosen direkt vom Anbauer...",
             describe_detail: "Diese 23 langstieligen Edel-Rosen (ca. 40-50cm) bestechen durch ihre samtig-weichen, Blütenblätter in leuchtendem Gelb-Orange. In einer hohen Bodenvase entfalten diese Rosen ihre Schönheit am besten. Dekorieren Sie Ihr Zuhause ganz nach Ihren Wünschen!",
             content: "23 langstielige gelb-orangefarbene Rosen (ca. 40-50cm)",
             price: {
@@ -125,10 +125,12 @@
     ]);
 
     //slider show/hide will be persistent in localstorage
-    app.controller('main', function($scope, localStorageService, dataObjects) {
+    app.controller('main', function($scope, localStorageService, dataObjects, $document) {
         $scope.slHeight = (localStorageService.get('sliderState') == true) ? '30' : '0';
         $scope.slBar = (localStorageService.get('sliderState') == true) ? '15' : '0';
         $scope.dataObjects = dataObjects;
+        $scope.coverNameArray = ['_x1', '_cv1', '_cv2', '_cv3'];
+        $scope.main_cover = null;
 
         //filter function for each catalog
         $scope.filterByTags = function (catalog) {
@@ -146,6 +148,16 @@
                 }
             });
             return _.toString(result);
+        };
+
+        //get product's of given id
+        $scope.getProduct = function (id) {
+            return _.find(dataObjects, {'id': id});
+        };
+
+        //change main cover when click on sub cover
+        $scope.changeCover = function(cover) {
+            $scope.main_cover = cover;
         };
 
     });
