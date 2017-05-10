@@ -1,22 +1,22 @@
 .container.product-detail(ng-repeat="data in dataObjects | filter:{id: " + id + "}")
-    .row
-        .col-md-4
-            .row
-                .col-md-12.main-cover
-                    img(ng-src="/images/data/{{main_cover}}.jpg", ng-if="main_cover")
-                    img(ng-src="/images/data/{{data.id}}_x1.jpg", ng-if="!main_cover")
-            .row
-                .col-md-3.sub-cover(ng-repeat="coverTail in coverNameArray")
-                    .figure
-                        img(ng-src="/images/data/{{data.id}}{{coverTail}}.jpg", ng-click="changeCover(data.id + coverTail)")
-        .col-md-2
-        .col-md-6.side-detail
-            h4= "{{data.name}}"
-            span= "{{data.describe_compact}}"
+    .col-md-4
+        .cover-container
+            .main-cover
+                a(class="MagicZoom", id="productCover", href="/images/data/{{data.id}}_x1.jpg", data-options="zoomWidth:150%; zoomHeight:100%;")
+                    img(src="/images/data/{{data.id}}_x1.jpg")
             .clearfix
-            a(href="#detail", class="scroll") Mehr Details
+                .selector
+                    a(ng-repeat="coverTail in coverNameArray", data-zoom-id="productCover", href="/images/data/{{data.id}}{{coverTail}}.jpg", data-image="/images/data/{{data.id}}{{coverTail}}.jpg")
+                        img(src="/images/data/{{data.id}}{{coverTail}}.jpg")
+
+    .col-md-2
+    .col-md-6.side-detail
+        h4= "{{data.name}}"
+        span= "{{data.describe_compact}}"
+        .clearfix
+        a(href="#detail", class="scroll") Mehr Details
     .clearfix
-    .row.more-detail
+    .more-detail
         section(id="detail")
         .col-md-12.section_caption
             p Beschreibung
@@ -28,7 +28,7 @@
         .clearfix
         p= "{{data.content}}"
     .clearfix
-    .row.more-detail
+    .more-detail
         .col-md-12.section_caption
             p weitere Blumen in Katalog
         .clearfix

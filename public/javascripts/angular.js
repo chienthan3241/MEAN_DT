@@ -130,7 +130,6 @@
         $scope.slBar = (localStorageService.get('sliderState') == true) ? '15' : '0';
         $scope.dataObjects = dataObjects;
         $scope.coverNameArray = ['_x1', '_cv1', '_cv2', '_cv3'];
-        $scope.main_cover = null;
 
         //filter function for each catalog
         $scope.filterByTags = function (catalog) {
@@ -153,11 +152,6 @@
         //get product's of given id
         $scope.getProduct = function (id) {
             return _.find(dataObjects, {'id': id});
-        };
-
-        //change main cover when click on sub cover
-        $scope.changeCover = function(cover) {
-            $scope.main_cover = cover;
         };
 
     });
@@ -228,6 +222,7 @@
         };
     });
 
+    //directive for boottrap checkbox to switch button
     app.directive('bootstrapSwitch', [
         function() {
             return {
