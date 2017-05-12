@@ -620,6 +620,8 @@ img#footerlogo:hover, img#footer_facebook_logo:hover, img#footer_twitter_logo:ho
     .product-detail .more-detail .section_caption p {
       font-size: large;
       color: #2196f3; }
+  .product-detail .more-detail .price_box {
+    font-size: xx-large; }
 
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
@@ -654,7 +656,25 @@ img#footerlogo:hover, img#footer_facebook_logo:hover, img#footer_twitter_logo:ho
           position: absolute;
           text-align: right;
           bottom: 30px;
-          right: 30px; } }
+          right: 30px; }
+  .bestseller .sort-box {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex; }
+    .bestseller .sort-box .label-sort {
+      width: 85%;
+      padding-right: 20px;
+      font-size: 14px;
+      padding-top: 6px; }
+      .bestseller .sort-box .label-sort label {
+        margin-bottom: 0; }
+    .bestseller .sort-box .select-sort {
+      width: 15%;
+      margin-bottom: -1px; }
+      .bestseller .sort-box .select-sort select {
+        font-size: 14px; } }
 
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -689,7 +709,25 @@ img#footerlogo:hover, img#footer_facebook_logo:hover, img#footer_twitter_logo:ho
           position: absolute;
           text-align: right;
           bottom: 30px;
-          right: 30px; } }
+          right: 30px; }
+  .bestseller .sort-box {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex; }
+    .bestseller .sort-box .label-sort {
+      width: 85%;
+      padding-right: 20px;
+      font-size: 14px;
+      padding-top: 6px; }
+      .bestseller .sort-box .label-sort label {
+        margin-bottom: 0; }
+    .bestseller .sort-box .select-sort {
+      width: 15%;
+      margin-bottom: -1px; }
+      .bestseller .sort-box .select-sort select {
+        font-size: 14px; } }
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
@@ -724,7 +762,25 @@ img#footerlogo:hover, img#footer_facebook_logo:hover, img#footer_twitter_logo:ho
           position: absolute;
           text-align: right;
           bottom: 30px;
-          right: 30px; } }
+          right: 30px; }
+  .bestseller .sort-box {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex; }
+    .bestseller .sort-box .label-sort {
+      width: 85%;
+      padding-right: 20px;
+      font-size: 13px;
+      padding-top: 6px; }
+      .bestseller .sort-box .label-sort label {
+        margin-bottom: 0; }
+    .bestseller .sort-box .select-sort {
+      width: 15%;
+      margin-bottom: -1px; }
+      .bestseller .sort-box .select-sort select {
+        font-size: 13px; } }
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
@@ -759,7 +815,25 @@ img#footerlogo:hover, img#footer_facebook_logo:hover, img#footer_twitter_logo:ho
           position: absolute;
           text-align: right;
           bottom: 30px;
-          right: 30px; } }
+          right: 30px; }
+  .bestseller .sort-box {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex; }
+    .bestseller .sort-box .label-sort {
+      width: 80%;
+      padding-right: 20px;
+      font-size: 13px;
+      padding-top: 6px; }
+      .bestseller .sort-box .label-sort label {
+        margin-bottom: 0; }
+    .bestseller .sort-box .select-sort {
+      width: 20%;
+      margin-bottom: -1px; }
+      .bestseller .sort-box .select-sort select {
+        font-size: 13px; } }
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
@@ -794,4 +868,22 @@ img#footerlogo:hover, img#footer_facebook_logo:hover, img#footer_twitter_logo:ho
           position: absolute;
           text-align: right;
           bottom: 30px;
-          right: 30px; } }
+          right: 30px; }
+  .bestseller .sort-box {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex; }
+    .bestseller .sort-box .label-sort {
+      width: 70%;
+      padding-right: 20px;
+      font-size: 13px;
+      padding-top: 6px; }
+      .bestseller .sort-box .label-sort label {
+        margin-bottom: 0; }
+    .bestseller .sort-box .select-sort {
+      width: 30%;
+      margin-bottom: -1px; }
+      .bestseller .sort-box .select-sort select {
+        font-size: 13px; } }

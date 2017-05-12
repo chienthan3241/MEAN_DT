@@ -1,5 +1,23 @@
+.container.bestseller
+    .sort-box
+        .label-sort
+            label.control-label.pull-right.text-right(for="select") Sortiert nach:
+        .select-sort
+            select.col-md-2.form-control.pull-right.text-right.sort-box(id="select" ng-model="sortModel")
+                option(value="{{sort.value}}" ng-repeat="sort in sortArray") {{sort.name}}
+    //.row
+    //    .col-md-8
+    //    .col-md-2
+    //        label.control-label.pull-right.text-right(for="select") Sortiert nach:
+    //    .col-md-2
+    //        select.form-control.pull-right.text-right.sort-box(id="select" ng-model="sortModel")
+    //            option(value="{{sort.value}}" ng-repeat="sort in sortArray") {{sort.name}}
+    .col-md-12.section_caption
+
+.clearfix
+br
 .container
-    .col-md-4(ng-repeat="data in dataObjects | filter:filterByTags('" + catalog + "')")
+    .col-md-4(ng-repeat="data in dataObjects | filter:filterByTags('" + catalog + "') | orderBy: sortModel")
         .col-md-11.item_box
             .main_cover
                 a(href= "/" + currentRouter + "/{{data.id}}")

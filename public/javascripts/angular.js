@@ -8,6 +8,49 @@
             .setNotify(true, true)
     });
 
+    //catalog data
+    app.constant('dataCataloge', [
+        {
+            catalog_id: "ctg1",
+            router_name: "blumenimbund"
+        },
+        {
+            catalog_id: "ctg2",
+            router_name: "blumenstraeusse"
+        },
+        {
+            catalog_id: "ctg3",
+            router_name: "muttertag"
+        },
+        {
+            catalog_id: "ctg4",
+            router_name: "hochzeit"
+        },
+        {
+            catalog_id: "ctg5",
+            router_name: "geburt"
+        },
+        {
+            catalog_id: "ctg6",
+            router_name: "trauer"
+        },
+        {
+            catalog_id: "ctg7",
+            router_name: "liebe_romantik"
+        },
+        {
+            catalog_id: "ctg8",
+            router_name: "glueckwunsch"
+        },
+        {
+            catalog_id: "ctg9",
+            router_name: "dankeschoen"
+        },
+        {
+            catalog_id: "ctg10",
+            router_name: "gute_besserung"
+        }
+    ]);
     //main Data
     app.constant('dataObjects', [
         {
@@ -125,11 +168,30 @@
     ]);
 
     //slider show/hide will be persistent in localstorage
-    app.controller('main', function($scope, localStorageService, dataObjects, $document) {
+    app.controller('main', function($scope, localStorageService, dataObjects, dataCataloge) {
         $scope.slHeight = (localStorageService.get('sliderState') == true) ? '30' : '0';
         $scope.slBar = (localStorageService.get('sliderState') == true) ? '15' : '0';
         $scope.dataObjects = dataObjects;
+        $scope.dataCataloge = dataCataloge;
         $scope.coverNameArray = ['_x1', '_cv1', '_cv2', '_cv3'];
+        $scope.sortArray = [
+            {
+                name: 'Default',
+                value: '0'
+            }, {
+                name: 'Preis aufsteigend',
+                value: 'price.euro*100 + price.cent'
+            }, {
+                name: 'Preis absteigend',
+                value: '-(price.euro*100 + price.cent)'
+            }, {
+                name: 'Name aufsteigend',
+                value: 'name'
+            }, {
+                name: 'Name absteigend',
+                value: '-(name)'
+            }];
+        $scope.sortModel = '0';
 
         //filter function for each catalog
         $scope.filterByTags = function (catalog) {
@@ -152,6 +214,17 @@
         //get product's of given id
         $scope.getProduct = function (id) {
             return _.find(dataObjects, {'id': id});
+        };
+
+        //random funtion for orderby
+        $scope.randomSort = function(object) {
+           return Math.random();
+        };
+
+        //get parent router
+        $scope.getRouterOfProduct = function (id) {
+            var product = $scope.getProduct(id);
+            return dataCataloge[_.findIndex(dataCataloge, {catalog_id : _.head(_.pull(_.split(product.tags,';'), 'bs'))})].router_name;
         };
 
     });

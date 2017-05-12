@@ -14,13 +14,13 @@ block content
         br
         .container-fluid.bestseller_box
             .col-md-2.bestseller_item(ng-repeat="data in dataObjects | filter:filterByTags('bs')")
-                .col-md-12.bestseller_item_detail
+                .col-md-12.bestseller_item_detail(ng-if="$index < 6")
                     .main_cover
-                        a(href= "/blumenstraeusse/{{data.id}}")
+                        a(href= "/{{getRouterOfProduct(data.id)}}/{{data.id}}")
                             img(src="/images/data/{{data.id}}_x1.jpg")
                     .clearfix
                     .underline_item
-                    a(href="/blumenstraeusse/{{data.id}}")
+                    a(href="/getRouterOfProduct(data.id)/{{data.id}}")
                         h6
                             b {{data.name}}
                     .clearfix

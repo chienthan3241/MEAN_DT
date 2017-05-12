@@ -27,8 +27,32 @@
         b Bestandteile:
         .clearfix
         p= "{{data.content}}"
+        .clearfix
+        b Preis:
+        .price_box
+            b {{data.price.euro}}.
+                sup {{data.price.cent}}*
+
     .clearfix
-    .more-detail
+    .more-detail.bestseller
         .col-md-12.section_caption
             p weitere Blumen in Katalog
         .clearfix
+        br
+        .container-fluid.bestseller_box
+            .col-md-2.bestseller_item(ng-repeat="data in dataObjects | filter:filterByTags('" + catalog + "') | filter: {id: '!' + " + id + "}")
+                .col-md-12.bestseller_item_detail(ng-if="$index < 6")
+                    .main_cover
+                        a(href= "/" + parentNav + "/{{data.id}}")
+                            img(src="/images/data/{{data.id}}_x1.jpg")
+                    .clearfix
+                    .underline_item
+                    a(href="/" + parentNav + "/{{data.id}}")
+                        h6
+                            b {{data.name}}
+                    .clearfix
+                    span {{data.describe_compact}}
+                    .clearfix
+                    .price_box
+                        b {{data.price.euro}}.
+                            sup {{data.price.cent}}*
