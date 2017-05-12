@@ -719,6 +719,38 @@ img#footerlogo:hover, img#footer_facebook_logo:hover, img#footer_twitter_logo:ho
   }
 }
 
+.kontakt-box{
+  font-size: 15px;
+  margin-bottom: 20px;
+  ul{
+    float: left;
+    width: 100%;
+    li{
+      list-style: none;
+    }
+    li.location::before{
+      content: "";
+      background-image: url("/images/location.svg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      padding-right: 20px;
+    }
+    li.telephoneNumber::before{
+      content: "";
+      background: url("/images/phone.svg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      padding-right: 20px;
+    }
+    li.emailContact::before{
+      content: "";
+      background-image: url("/images/email.svg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      padding-right: 20px;
+    }
+  }
+}
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
   .bestseller{

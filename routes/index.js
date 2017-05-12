@@ -252,5 +252,10 @@ router.get('/gute_besserung/:id', function(req, res, next) {
   }
 });
 
+//Kontakt
+router.get('/adresse', function(req, res, next) {
+  res.render('adresse', { title: 'Duc&Trang Blumen', bodyHeaderText: 'Kontakt', navContact: 'active' });
+});
+
 
 module.exports = router;

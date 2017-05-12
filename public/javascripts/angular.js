@@ -166,9 +166,16 @@
             }
         }
     ]);
+    //adress info
+    app.constant('liAdressElements', [
+        {class: 'location', txt: 'Regensburger Str. 175A 90478 Nürnberg'},
+        {class: 'telephoneNumber', txt: '+49 176 88 1111 66'},
+        {class: 'emailContact', txt: 'tmchut@yahoo.com'}
+    ]);
+
 
     //slider show/hide will be persistent in localstorage
-    app.controller('main', function($scope, localStorageService, dataObjects, dataCataloge) {
+    app.controller('main', function($scope, localStorageService, dataObjects, dataCataloge, liAdressElements) {
         $scope.slHeight = (localStorageService.get('sliderState') == true) ? '30' : '0';
         $scope.slBar = (localStorageService.get('sliderState') == true) ? '15' : '0';
         $scope.dataObjects = dataObjects;
@@ -192,6 +199,7 @@
                 value: '-(name)'
             }];
         $scope.sortModel = '0';
+        $scope.liAdressElements = liAdressElements;
 
         //filter function for each catalog
         $scope.filterByTags = function (catalog) {
@@ -276,12 +284,8 @@
     });
 
     //footer adresse
-    app.controller('footerController', function ($scope, dataObjects) {
-        $scope.liAdressElements = [
-            {class: 'location', txt: 'Regensburger Str. 175A 90478 Nürnberg'},
-            {class: 'telephoneNumber', txt: '+49 176 88 1111 66'},
-            {class: 'emailContact', txt: 'tmchut@yahoo.com'}
-        ];
+    app.controller('footerController', function ($scope, dataObjects, liAdressElements) {
+        $scope.liAdressElements = liAdressElements;
 
         //count function for each catalog
         $scope.countByTags = function (catalog) {

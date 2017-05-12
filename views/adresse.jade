@@ -1,0 +1,27 @@
+extends layout
+
+block content
+    -var bodyHeaderText = "Kontakt"
+    include contentHeader
+
+    .container
+        .jumbotron
+            h3 Kontakt
+            .container-fluid
+                .col-md-6
+                    .kontakt-box
+                        span Trang
+                        .clearfix
+                        span Regensburgerstraße 175A
+                        .clearfix
+                        span 90478 Nürnberg
+                .col-md-6
+                    .kontakt-box
+                        ul(ng-repeat="liAdressElement in liAdressElements | filter: {class: '!location'}")
+                            li(class="{{liAdressElement.class}}") &nbsp;{{liAdressElement.txt}}
+            .container-fluid
+                .col-md-12
+                    iframe.addressMap(width="100%", height="400", frameborder="0", style="border:0", src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDlb4uWwS7Y2BqIb0dPkZGgZSW0szBeKwU&q=Regensburger+Str.+175A,+90478+Nürnberg,+Deutschland", allowfullscreen)
+
+block footer
+    include footer
