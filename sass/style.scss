@@ -546,9 +546,10 @@ body {
   }
   .top_page_title_bottom{
     padding: 110px 0 0 0;
-    height: 100%;
+    //height: 100%;
     background: url("/images/header_bg_top.png") no-repeat center top;
-    background-size: cover;
+    background-size: 100% auto;
+
   }
   margin-bottom: 20px;
 }
@@ -561,8 +562,8 @@ body {
   .top_footer{
     padding: 132px 0 0 0;
     width: 100%;
-    background: url("/images/footer_bg_top.png") no-repeat center top;
-    background-size: cover;
+    background: url("/images/footer_bg_top.png") no-repeat center bottom;
+    background-size: 100% auto;
   }
   .footer_body{
     background: #fff url("/images/footer_bg_body.png") repeat center bottom;
