@@ -168,7 +168,7 @@
     ]);
     //adress info
     app.constant('liAdressElements', [
-        {class: 'location', txt: 'Regensburger Str. 175A 90478 Nürnberg'},
+        {class: 'location', txt: 'Peterstraße 68, 90478 Nürnberg'},
         {class: 'telephoneNumber', txt: '+49 176 88 1111 66'},
         {class: 'emailContact', txt: 'tmchut@yahoo.com'}
     ]);
